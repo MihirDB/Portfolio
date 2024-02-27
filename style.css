@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+
+    color: rgb(255, 255, 255);
+    font-family: Poppins ,sans-serif;
+}
+
+/* Home Section */
+
+.home {
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img {
+    position: relative;
+    width: 70vw;
+    height: auto;
+}
+
+/* About Section */
+
+.about {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px
+}
+
+.textbox {
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.textbox h2 {
+    font-weight: 600;
+}
+
+.textbox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(255, 255, 255);
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(255, 255, 255);
+    left: -15px;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .about {
+        margin: 50px auto;
+    }
+
+    .about::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .textbox {
+        font-size: 13px;
+    }
+
+    .textbox small {
+        margin-bottom: 10px;
+    }
+
+    .right-container{
+        left: 0;
+    }
+
+    .left-container img,
+    .right-container img {
+        left: 10px;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid rgb(255, 255, 255);
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+/* Projects Section  */
+
+.projects {
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containProjects {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1px solid;
+}
+
+.card img {
+    width: 35vw;
+    height: auto;
+    opacity: 0.5;
+
+    border-radius: 10px;
+}
+
+.content {
+    position: absolute;
+    margin: 40px;
+}
+
+.card a {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 15px;
+    border: none;
+
+    font-family: Poppins, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+    .card a {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .containProjects {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .card img {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .card {
+        font-size: 0.8em;
+    }
+}
+
+/* Contact Section */

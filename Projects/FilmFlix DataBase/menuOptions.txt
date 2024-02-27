@@ -1,0 +1,8 @@
+    FilmFlix DataBase Menu  
+   1. Print    all    films 
+   2. Add      a       film 
+   3. Update specific field 
+   4. Update   whole   film 
+   5. Delete     a     film 
+   6. Create         Report 
+   7. Exit   FilmFlix   App 

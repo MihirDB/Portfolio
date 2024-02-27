@@ -1,0 +1,40 @@
+* {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#border {
+    display: flex;
+    align-items: center;
+    
+    border: 2px solid white;
+    width: 40vw;
+    height: 35vw;
+    margin-left: 30vw;
+}
+
+.reels {
+    border: 2px solid white;
+    width: 15vw;
+    height: 5vw;
+    margin: 3vw;
+    padding: 1vw;
+
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+#bet {
+    font-size: 2em;
+}
+
+#btn {
+    font-size: 2em;
+}
+
+p {
+    font-size: 2em;
+}

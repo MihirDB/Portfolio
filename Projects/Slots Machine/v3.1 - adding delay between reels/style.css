@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(247, 236, 144);
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    -webkit-text-stroke: 1px rgb(226, 32, 40);
+    text-align: center;
+}
+
+section {
+    background-color: rgb(226, 32, 40);
+    border: 15px solid rgb(46, 67, 70);
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: row;
+
+    width: 400px;
+    height: 200px;
+
+    margin-bottom: 3vh;
+}
+
+.reels {
+    box-sizing: border-box;
+    background-color: rgb(247, 236, 144);
+
+    border-radius: 10px;
+
+    width: 100px;
+    height: 125px;
+
+    margin-top: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 35px;
+    
+
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#bet {
+    background-color: rgb(226, 32, 40);
+    color: rgb(247, 236, 144);
+
+    font-size: 2em;
+    text-align: center;
+
+    width: 50px;
+
+    margin-bottom: 2vh;
+
+    border-radius: 10px;
+}
+
+#btn {
+    background-color: rgb(226, 32, 40);
+    color: rgb(247, 236, 144);
+
+    border: 10px solid rgb(46, 67, 70);
+    border-radius: 5px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+#btn:hover {
+    background-color: rgb(247, 236, 144);
+    color: rgb(226, 32, 40);
+}
+
+#balSection {
+    display: flex;
+}
+
+p {
+    color: rgb(247, 236, 144);
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    padding: 1px;
+}

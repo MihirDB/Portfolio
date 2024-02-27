@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: rgb(226, 32, 40);
+    border-radius: 10px;
+
+    padding: 10px;
+
+    color: rgb(247, 236, 144);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    font-size: 2em;
+    /* -webkit-text-stroke: 0.1px rgb(46, 67, 70); */
+    text-align: center;
+}
+
+#outer {
+    background-color: rgb(226, 32, 40);
+    border-radius: 15px;
+
+    width: 359px;
+    height: 208px;
+}
+
+#dotBorder {
+    border: 15px dotted rgb(243, 204, 11);
+
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-left: 12px;
+    margin-right: 12px;
+
+    width: 303px;
+    height: 157px;
+}
+
+#inner1 {
+    position: absolute;
+    background-color: rgb(46, 67, 70);
+    border-radius: 10px;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 9px;
+    margin-right: 9px;
+
+    width: 285px;
+    height: 141px;
+}
+
+#inner2 {
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(231, 31, 34);
+    border-radius: 5px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+    margin-right: 14px;
+
+    width: 257px;
+    height: 102px;
+}
+
+.reels {
+    background-color: rgb(245, 288, 152);
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgb(157, 42, 37);
+
+    width: 60px;
+    height: 70px;
+
+    margin: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-size: 2em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#bet {
+    background-color: rgb(226, 32, 40);
+    color: rgb(247, 236, 144);
+
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+    width: 50px;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    border-radius: 10px;
+}
+
+#btn {
+    background-color: rgb(226, 32, 40);
+    color: rgb(247, 236, 144);
+
+    border: 10px solid rgb(46, 67, 70);
+    border-radius: 5px;
+
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#btn:hover {
+    background-color: rgb(247, 236, 144);
+    color: rgb(226, 32, 40);
+}
+
+#balSection {
+    display: flex;
+}
+
+p {
+    color: rgb(247, 236, 144);
+    font-size: 2em;
+    padding: 2px;
+}
