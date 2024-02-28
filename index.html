@@ -13,19 +13,32 @@
 
 <body>
 
-    <section class="home">
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
         <h1>Mihir Bava</h1>
         <img src="./images/test.png" alt="Half Face Typography">
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
 
         <div class="container left-container hidden">
             <img src="./images/CCA.png" alt="CCA Logo">
             <div class="textbox">
                 <h2>High School</h2>
                 <small>2013 - 2019</small>
-                <p>I started by choosing the subject CIDA (Certificate in Digital Applications} for GCSE however this was discontinued by my school.</p>
+                <p>
+                    I started by choosing the subject CIDA (Certificate in Digital Applications} 
+                    for GCSE however this was discontinued by my school. During this time we 
+                    had many different supply teachers and I was exposed to some basic HTML.
+                </p>
                 <span class="left-container-arrow"></span>
             </div>
         </div>
@@ -35,7 +48,12 @@
             <div class="textbox">
                 <h2>Sixth Form</h2>
                 <small>2019 - 2021</small>
-                <p>I studied Computer Science for A-Levels and was taught the basics of python. I learnt some Lua and coded in ROBLOX Studio to try and create my own game. Due to COVID, I was really demotivated and didnt put enough effort to do better and expand my programming skills.</p>
+                <p>
+                    I studied Computer Science for A-Levels and was taught the basics of python. 
+                    I learnt some Lua and coded in ROBLOX Studio to try and create my own game. 
+                    Due to COVID, I was really demotivated and didnt put enough effort to do 
+                    better and expand my programming skills.
+                </p>
                 <span class="right-container-arrow"></span>
             </div>
         </div>
@@ -45,7 +63,12 @@
             <div class="textbox">
                 <h2>IT Support Apprenticeship</h2>
                 <small>Feb 2022 - Sept 2023</small>
-                <p>After struggling to get into Software Development Apprenticeships, I decided to to enter the support sector due to my knowledge of computers. My colleague introducted me to JustIT which finally lead me to push myself and start coding again.</p>
+                <p>
+                    After struggling to get into Software Development Apprenticeships, I decided 
+                    to to enter the support sector due to my knowledge of computers. My colleague 
+                    introducted me to JustIT which finally lead me to push myself and start coding 
+                    again.
+                </p>
                 <span class="left-container-arrow"></span>
             </div>
         </div>
@@ -55,14 +78,18 @@
             <div class="textbox">
                 <h2>Software Development Skills Bootcamp</h2>
                 <small>Nov 2023 - Feb 2024</small>
-                <p>I have now completed this 12 week intense bootcamp and have learnt HTML5, CSS3, Javascript, MySQL and Python! I am now going to improve my JS knowledge and have started to learn REACT.</p>
+                <p>
+                    I have now completed this 12 week intense bootcamp and have learnt HTML5, CSS3, 
+                    Javascript, MySQL and Python! I am now going to improve my JS knowledge and have 
+                    started to learn REACT.
+                </p>
                 <span class="right-container-arrow"></span>
             </div>
         </div>
 
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <h1>Projects</h1>
 
         <div class="containProjects">
@@ -90,9 +117,27 @@
 
     </section>
 
-    <section class="contact">
-        <!-- <h1>Contact</h1> -->
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+
+        <div class="inputForm">
+            <input type="text" id="fullName" placeholder="Full Name" required><br>
+            <input type="email" id="email_id" placeholder="Email" required><br>
+            <textarea id="message" placeholder="Message" required></textarea><br>
+            <button onclick="sendMail()">Send</button>
+        </div>
     </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "g9qqe2VBLDwwApuKl",
+            });
+        })();
+    </script>
 
     <script src="./script.js"></script>
 
