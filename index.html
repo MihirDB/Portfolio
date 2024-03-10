@@ -1,146 +1,235 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Mihir Bava Portfolio</title>
+    </head>
 
-    <link rel="stylesheet" href="style.css">
-    <title>Mihir Bava Portfolio</title>
+    <body>
+        <header>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-</head>
+        <section id="home" class="home">
+            <h1>Mihir Bava</h1>
+            <img src="./images/test.png" alt="Half Face Typography" />
+        </section>
 
-<body>
-
-    <header>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="home" class="home">
-        <h1>Mihir Bava</h1>
-        <img src="./images/test.png" alt="Half Face Typography">
-    </section>
-
-    <section id="about" class="about">
-
-        <div class="container left-container hidden">
-            <img src="./images/CCA.png" alt="CCA Logo">
-            <div class="textbox">
-                <h2>High School</h2>
-                <small>2013 - 2019</small>
-                <p>
-                    I started by choosing the subject CIDA (Certificate in Digital Applications} 
-                    for GCSE however this was discontinued by my school. During this time we 
-                    had many different supply teachers and I was exposed to some basic HTML.
-                </p>
-                <span class="left-container-arrow"></span>
-            </div>
-        </div>
-
-        <div class="container right-container hidden">
-            <img src="./images/Sixth Form.png" alt="C6 Logo">
-            <div class="textbox">
-                <h2>Sixth Form</h2>
-                <small>2019 - 2021</small>
-                <p>
-                    I studied Computer Science for A-Levels and was taught the basics of python. 
-                    I learnt some Lua and coded in ROBLOX Studio to try and create my own game. 
-                    Due to COVID, I was really demotivated and didnt put enough effort to do 
-                    better and expand my programming skills.
-                </p>
-                <span class="right-container-arrow"></span>
-            </div>
-        </div>
-
-        <div class="container left-container hidden">
-            <img src="./images/Advinia.png" alt="Advinia Logo">
-            <div class="textbox">
-                <h2>IT Support Apprenticeship</h2>
-                <small>Feb 2022 - Sept 2023</small>
-                <p>
-                    After struggling to get into Software Development Apprenticeships, I decided 
-                    to to enter the support sector due to my knowledge of computers. My colleague 
-                    introducted me to JustIT which finally lead me to push myself and start coding 
-                    again.
-                </p>
-                <span class="left-container-arrow"></span>
-            </div>
-        </div>
-
-        <div class="container right-container hidden">
-            <img src="./images/JustIT.png" alt="JustIT Logo">
-            <div class="textbox">
-                <h2>Software Development Skills Bootcamp</h2>
-                <small>Nov 2023 - Feb 2024</small>
-                <p>
-                    I have now completed this 12 week intense bootcamp and have learnt HTML5, CSS3, 
-                    Javascript, MySQL and Python! I am now going to improve my JS knowledge and have 
-                    started to learn REACT.
-                </p>
-                <span class="right-container-arrow"></span>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="projects" class="projects">
-        <h1>Projects</h1>
-
-        <div class="containProjects">
-            <div class="card">
-                <img src="./images/JS Project.png" alt="Slots Machine Project">
-                <div class="content">
-                    <h2>🍒Slots Machine</h2>
-                    <h3>HTML, CSS & JS</h3>
-                    <p>A simple slots machine game inspired by my first ever python project!</p>
-                    <a href="./Projects/Slots Machine/v4 - adding alerts/index.html" target="_blank">View Project</a>
-                    <a href="https://github.com/MihirDB/Portfolio/tree/main/Projects/Slots%20Machine" target="_blank">View Code</a>
+        <section id="about" class="about">
+            <div class="container left-container hidden">
+                <img src="./images/CCA.png" alt="CCA Logo" />
+                <div class="textbox">
+                    <h2>High School</h2>
+                    <small>2013 - 2019</small>
+                    <p>
+                        I started by choosing the subject CIDA (Certificate in
+                        Digital Applications} for GCSE however this was
+                        discontinued by my school. During this time we had many
+                        different supply teachers and I was exposed to some
+                        basic HTML.
+                    </p>
+                    <span class="left-container-arrow"></span>
                 </div>
             </div>
-            <div class="card">
-                <img src="./images/Python Project.png" alt="FilmFlix DB Project">
-                <div class="content">
-                    <h2>🎥FilmFlix Database</h2>
-                    <h3>Python, SQLite</h3>
-                    <p>A command line CRUD Python application that allows you to manage a database!</p>
-                    <a href="https://replit.com/@MihirDB/FilmFlix-Database" target="_blank">View Project</a>
-                    <a href="https://github.com/MihirDB/Portfolio/tree/main/Projects/FilmFlix%20DataBase" target="_blank">View Code</a>
+
+            <div class="container right-container hidden">
+                <img src="./images/Sixth Form.png" alt="C6 Logo" />
+                <div class="textbox">
+                    <h2>Sixth Form</h2>
+                    <small>2019 - 2021</small>
+                    <p>
+                        I studied Computer Science for A-Levels and was taught
+                        the basics of python. I learnt some Lua and coded in
+                        ROBLOX Studio to try and create my own game. Due to
+                        COVID, I was really demotivated and didnt put enough
+                        effort to do better and expand my programming skills.
+                    </p>
+                    <span class="right-container-arrow"></span>
                 </div>
             </div>
-        </div>
 
-    </section>
+            <div class="container left-container hidden">
+                <img src="./images/Advinia.png" alt="Advinia Logo" />
+                <div class="textbox">
+                    <h2>IT Support Apprenticeship</h2>
+                    <small>Feb 2022 - Sept 2023</small>
+                    <p>
+                        After struggling to get into Software Development
+                        Apprenticeships, I decided to to enter the support
+                        sector due to my knowledge of computers. My colleague
+                        introducted me to JustIT which finally lead me to push
+                        myself and start coding again.
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
 
-    <section id="contact" class="contact">
-        <h1>Contact</h1>
+            <div class="container right-container hidden">
+                <img src="./images/JustIT.png" alt="JustIT Logo" />
+                <div class="textbox">
+                    <h2>Software Development Skills Bootcamp</h2>
+                    <small>Nov 2023 - Feb 2024</small>
+                    <p>
+                        I have now completed this 12 week intense bootcamp and
+                        have learnt HTML5, CSS3, Javascript, MySQL and Python! I
+                        am now going to improve my JS knowledge and have started
+                        to learn REACT.
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+        </section>
 
-        <div class="inputForm">
-            <input type="text" id="fullName" placeholder="Full Name" required><br>
-            <input type="email" id="email_id" placeholder="Email" required><br>
-            <textarea id="message" placeholder="Message" required></textarea><br>
-            <button onclick="sendMail()">Send</button>
-        </div>
-    </section>
+        <section id="projects" class="projects">
+            <h1>Projects</h1>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-            publicKey: "g9qqe2VBLDwwApuKl",
-            });
-        })();
-    </script>
+            <div class="containProjects">
+                <div class="card">
+                    <img
+                        src="./images/JS Project.png"
+                        alt="Slots Machine Project"
+                    />
+                    <div class="content">
+                        <h2>🍒Slots Machine</h2>
+                        <h3>HTML, CSS & JS</h3>
+                        <p>
+                            A simple slots machine game inspired by my first
+                            ever python project!
+                        </p>
+                        <a
+                            href="./Projects/Slots Machine/v4 - adding alerts/index.html"
+                            target="_blank"
+                            >View Project</a
+                        >
+                        <a
+                            href="https://github.com/MihirDB/Portfolio/tree/main/Projects/Slots%20Machine"
+                            target="_blank"
+                            >View Code</a
+                        >
+                    </div>
+                </div>
 
-    <script src="./script.js"></script>
+                <div class="card">
+                    <img
+                        src="./images/Python Project.png"
+                        alt="FilmFlix DB Project"
+                    />
+                    <div class="content">
+                        <h2>🎥FilmFlix Database</h2>
+                        <h3>Python, SQLite</h3>
+                        <p>
+                            A command line CRUD Python application that allows
+                            you to manage a database!
+                        </p>
+                        <a
+                            href="https://replit.com/@MihirDB/FilmFlix-Database"
+                            target="_blank"
+                            >View Project</a
+                        >
+                        <a
+                            href="https://github.com/MihirDB/Portfolio/tree/main/Projects/FilmFlix%20DataBase"
+                            target="_blank"
+                            >View Code</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="containProjects">
+                <div class="card">
+                    <img
+                        src="./images/React To Do Project.png"
+                        alt="React To Do App"
+                    />
+                    <div class="content">
+                        <h2>📔To Do App</h2>
+                        <h3>React</h3>
+                        <p>
+                            A simple to-do app that allows you to mark items as
+                            complete!
+                        </p>
+                        <a
+                            href="https://mihirdb.github.io/react-to-do/"
+                            target="_blank"
+                            >View Project</a
+                        >
+                        <a
+                            href="https://github.com/MihirDB/react-to-do"
+                            target="_blank"
+                            >View Code</a
+                        >
+                    </div>
+                </div>
 
-</body>
+                <div class="card">
+                    <img
+                        src="./images/React Anime Search Project.png"
+                        alt="React Anime Search App"
+                    />
+                    <div class="content">
+                        <h2>💢Anime Search Site</h2>
+                        <h3>React</h3>
+                        <p>
+                            A site that allows you to search for different
+                            anime!
+                        </p>
+                        <a
+                            href="https://mihirdb.github.io/react-anime-search/"
+                            target="_blank"
+                            >View Project</a
+                        >
+                        <a
+                            href="https://github.com/MihirDB/react-anime-search"
+                            target="_blank"
+                            >View Code</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact" class="contact">
+            <h1>Contact</h1>
+
+            <div class="inputForm">
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Full Name"
+                    required
+                /><br />
+                <input
+                    type="email"
+                    id="email_id"
+                    placeholder="Email"
+                    required
+                /><br />
+                <textarea id="message" placeholder="Message" required></textarea
+                ><br />
+                <button onclick="sendMail()">Send</button>
+            </div>
+        </section>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "g9qqe2VBLDwwApuKl",
+                });
+            })();
+        </script>
+
+        <script src="./script.js"></script>
+    </body>
 </html>
